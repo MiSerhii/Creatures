@@ -51,41 +51,36 @@ a {
 // search form
 
 .search {
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
-    position: relative;
     width: 300px;
     margin: auto 20px;
 
-&_impt {
-    height: 20px;
-    width: 0px;
-    padding: 0 42px 0 15px;
-    border: none;
-    outline: none;
-    transition: .4s cubic-bezier(0, 0.8, 0, 1);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
+    &_inpt {
+        display: none;
+        border: none;
+        outline: none;
     }   
- 
-&_impt:focus {
-    width: 250px;
-    z-index: 1;
+    
+    &_butt {
+        cursor: pointer;
+        border: none;
+        color: white;
+        margin-left: 10px;
     }  
+    
+    &_inpt:focus, &_butt:focus ~ &_inpt {
+        display: block;
+        width: 200px;
+    }
 
-.search-butt {
-    cursor: pointer;
-    border: none;
-    background: #212121;
-  }
+    &:active &_inpt {
+        display: block;
+    }
+}
 
-.search-butt:before {
-    // font-family: FontAwesome;
-    // content: "\f002";
-    font-size: 16px;
-    color: #F9F0DA;
-  }
+
 
 //end search form
 
