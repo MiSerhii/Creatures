@@ -109,11 +109,11 @@ a {
     height: 100%;
     width: 100%;
 
-    &:nth-child(2) {
-    }
+    // &:nth-child(2) {
+    // }
 
-    &:nth-child(3) {
-    }
+    // &:nth-child(3) {
+    // }
 }
 
 .slide-dots {
@@ -182,13 +182,13 @@ a {
     font-weight: bold;;
     font-size: 19px;
     color: white;
+
+    &:hover { 
+        box-shadow: 0 0 2px 2px #212121;
+        font-size: 21px;
+        }
     }
 
-&_exp-now:hover { 
-    box-shadow: 0 0 2px 2px #212121;
-    font-size: 21px;
-}
-    
 &_reptile-pic {
     position: absolute;
     width: 863px;
@@ -197,9 +197,3 @@ a {
     top: 365px;
     }    
 }
-
-
-
-
-
-
