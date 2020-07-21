@@ -27,18 +27,69 @@ a {
 }
 
 .main-key {
+    font-family: Alegreya Sans;
+    font-size: 18px;
     padding: 0px 20px;
     color: white;
+
+&:hover {
+    font-size: 30px;
+    color: green;
+    }
 }
 
 .main-info {
     position: relative;
+    letter-spacing: 0.05em;
     width: 100%;
     min-height: calc(100vh - 80px);
     left: 0px;
 
     background: linear-gradient(119.69deg, rgba(204, 204, 204, 0.37) 0%, rgba(102, 102, 102, 0.23) 100%);
 }
+
+// search form
+
+.search {
+    box-sizing: border-box;
+    position: relative;
+    width: 300px;
+    margin: auto 20px;
+
+&_impt {
+    height: 20px;
+    width: 0px;
+    padding: 0 42px 0 15px;
+    border: none;
+    outline: none;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    }   
+ 
+&_impt:focus {
+    width: 250px;
+    z-index: 1;
+    }  
+
+.search-butt {
+    cursor: pointer;
+    border: none;
+    background: #212121;
+  }
+
+.search-butt:before {
+    // font-family: FontAwesome;
+    // content: "\f002";
+    font-size: 16px;
+    color: #F9F0DA;
+  }
+
+//end search form
+
+//start main-page block slider
 
 .slider {
     height: calc(100vh - 80px);
@@ -75,7 +126,7 @@ a {
 
 .slide-dot {
     width: 48px;
-    height: 2px;
+    height: 4px;
     background-color: white;
     margin: 0px 5px;
     border-radius: 2px;
@@ -84,3 +135,71 @@ a {
         background: rgba(71, 108, 0, 0.76);
     }
 }
+
+//end main-page block slider
+
+.slide1 {
+    display: flex;
+    padding-left: 300px;
+
+&_majestic {
+    margin-top: 203px;
+    font-family: Montserrat;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: 0.04em;
+    color: #212121;
+    }
+
+&_weekend {
+    position: absolute;
+    top: 254px;
+    font-family: Montserrat;
+    font-size: 144px;
+    line-height: 176px;
+    letter-spacing: 0.04em;
+    color: #212121;
+    }
+
+&_offer {
+    position: absolute;
+    top: 411px;
+    font-family: Alegreya Sans;
+    font-size: 27px;
+    line-height: 39px;
+    color: #212121;
+    } 
+    
+&_exp-now {
+    position: absolute;
+    width: 168px;
+    height: 52px;
+    top: 554px;
+    background: rgba(71, 108, 0, 0.76);
+    border: none;
+    outline: none;
+    font-family: Alegreya Sans;
+    font-weight: bold;;
+    font-size: 19px;
+    color: white;
+    }
+
+&_exp-now:hover { 
+    box-shadow: 0 0 2px 2px #212121;
+    font-size: 21px;
+}
+    
+&_reptile-pic {
+    position: absolute;
+    width: 863px;
+    height: 383px;
+    left: 640px;
+    top: 365px;
+    }    
+}
+
+
+
+
+
+
