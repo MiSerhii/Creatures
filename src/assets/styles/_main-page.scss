@@ -1,4 +1,5 @@
 .main-info {
+    display: flex;
     position: relative;
     letter-spacing: 0.05em;
     width: 100%;
@@ -10,103 +11,146 @@
 
 //start main-page block slider
 
-.slider {
-    height: calc(100vh - 80px);
-    width: 100%;
+.slick-list {
+    // height: auto !important;
     overflow: hidden;
-
-    &_container {
-        transition: all .3s ease;
-        transform: translateX(0px);
-        display: flex;
-        height: 100%;
-        width: 100%;    
-    }    
 }
 
-.slide {
-    height: 100%;
-    width: 100%;
+// .slick-track {
+//     display: flex;
+//     align-items: flex-start;
+// }
+
+.slider {
+    display: flex;
+    // flex-direction: column;
 }
 
-.slide-dots {
+.slider .slick-dots {
     position: absolute;
-    bottom: 20px;
     display: flex;
     justify-content: center;
+    bottom: 20px;
     width: 100%;
 }
 
-.slide-dot {
+.slider .slick-dots li {
+    list-style: none;
+}
+
+.slider .slick-dots button {
+    font-size: 0;
     width: 48px;
     height: 4px;
     background-color: white;
     margin: 0px 5px;
     border-radius: 2px;
-
-    &.active {
-        background: rgba(71, 108, 0, 0.76);
-    }
+    outline: none;
+    border: none;
 }
+
+.slider .slick-dots li.slick-active button {
+    background-color: rgba(71, 108, 0, 0.76);;
+}
+
+
+// .slider {
+//     height: calc(100vh - 80px);
+//     width: 100%;
+//     overflow: hidden;
+
+//     &_container {
+//         transition: all .3s ease;
+//         transform: translateX(0px);
+//         display: flex;
+//         height: 100%;
+//         width: 100%;    
+//     }    
+// }
+
+// .slide {
+//     height: 100%;
+//     width: 100%;
+// }
+
+// .slide-dots {
+//     position: absolute;
+//     bottom: 20px;
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
+// }
+
+// .slide-dot {
+//     width: 48px;
+//     height: 4px;
+//     background-color: white;
+//     margin: 0px 5px;
+//     border-radius: 2px;
+
+//     &.active {
+//         background: rgba(71, 108, 0, 0.76);
+//     }
+// }
 
 //end main-page block slider
 
-.slide1 {
-    display: flex;
-    padding-left: 300px;
+// .slide1 {
+//     display: flex;
+//     padding-left: 300px;
 
-    &_majestic {
-        margin-top: 203px;
-        font-family: Montserrat;
-        font-size: 72px;
-        line-height: 88px;
-        letter-spacing: 0.04em;
-        color: #212121;
-    }
+//     &_majestic {
+//         margin-top: 203px;
+//         font-family: Montserrat;
+//         font-size: 72px;
+//         line-height: 88px;
+//         letter-spacing: 0.04em;
+//         color: #212121;
+//     }
 
-    &_weekend {
-        position: absolute;
-        top: 254px;
-        font-family: Montserrat;
-        font-size: 144px;
-        line-height: 176px;
-        letter-spacing: 0.04em;
-        color: #212121;
-    }
+//     &_weekend {
+//         position: absolute;
+//         top: 254px;
+//         font-family: Montserrat;
+//         font-size: 144px;
+//         line-height: 176px;
+//         letter-spacing: 0.04em;
+//         color: #212121;
+//     }
 
-    &_offer {
-        position: absolute;
-        top: 411px;
-        font-family: Alegreya Sans;
-        font-size: 27px;
-        line-height: 39px;
-        color: #212121;
-    } 
+//     &_offer {
+//         position: absolute;
+//         top: 411px;
+//         font-family: Alegreya Sans;
+//         font-size: 27px;
+//         line-height: 39px;
+//         color: #212121;
+//     } 
         
-    &_exp-now {
-        position: absolute;
-        width: 168px;
-        height: 52px;
-        top: 554px;
-        background: rgba(71, 108, 0, 0.76);
-        border: none;
-        outline: none;
-        font-family: Alegreya Sans;
-        font-weight: bold;;
-        font-size: 19px;
-        color: white;
+//     &_exp-now {
+//         position: absolute;
+//         width: 168px;
+//         height: 52px;
+//         top: 554px;
+//         background: rgba(71, 108, 0, 0.76);
+//         border: none;
+//         outline: none;
+//         font-family: Alegreya Sans;
+//         font-weight: bold;;
+//         font-size: 19px;
+//         color: white;
 
-        &:hover { 
-            box-shadow: 0 0 2px 2px #212121;
-            font-size: 21px;
-        }
-    }
+//         &:hover { 
+//             box-shadow: 0 0 2px 2px #212121;
+//             font-size: 21px;
+//         }
+//     }
 
-    &_reptile-pic {
-        position: absolute;
-        width: 863px;
-        height: 383px;
-        left: 640px;
-        top: 365px;
-    }    
-}
+//     &_reptile-pic {
+//         position: absolute;
+//         width: 863px;
+//         height: 383px;
+//         left: 640px;
+//         top: 365px;
+//     }    
+// }
