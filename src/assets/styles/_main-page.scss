@@ -45,6 +45,10 @@
     border-radius: 2px;
     outline: none;
     border: none;
+
+    &::before {
+        display: none;
+    }
 }
 
 .slider .slick-dots li.slick-active button {

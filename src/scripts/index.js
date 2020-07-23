@@ -3,7 +3,6 @@ $(document).ready(function() {
     $('.slider').slick({
         arrows: false,
         dots: true,
-        slidesToShow: 1
     });
 
     var $searchIcon = $('.search_butt');
@@ -26,7 +25,11 @@ $(document).ready(function() {
         var $target = $(event.target);
   
         if (!$target.closest('.search').length) {
-          $searchInput.removeClass('active');
+            if ($searchInput.val() == '') {
+                $searchInput.removeClass('active');
+            }
+
+        //   $searchInput.removeClass('active');
         }
       });
 });
