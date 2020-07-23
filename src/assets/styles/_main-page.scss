@@ -9,6 +9,8 @@
     background: linear-gradient(119.69deg, rgba(204, 204, 204, 0.37) 0%, rgba(102, 102, 102, 0.23) 100%);
 }
 
+// start main-page slider form
+
 .slider {
     display: flex;
     max-width: 100%;
@@ -38,11 +40,11 @@
 
 .slider .slick-dots button {
     font-size: 0;
-    width: 48px;
-    height: 4px;
+    width: 50px;
+    height: 2px;
     background-color: white;
     margin: 0px 5px;
-    border-radius: 2px;
+    border-radius: 3px;
     outline: none;
     border: none;
 
@@ -54,3 +56,5 @@
 .slider .slick-dots li.slick-active button {
     background-color: rgba(71, 108, 0, 0.76);
 }
+
+// end main-page slider form

@@ -1,4 +1,4 @@
-header {
+header  {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
@@ -8,22 +8,22 @@ header {
     background-color: #212121;
 }
 
-.logo {
+.logo   {
     padding: 20px 60px;
 }
 
-.header-menu {
+.header-menu    {
     display: flex;
     justify-content: space-between;
 
-    &_key-menu {
+    &_key-menu  {
         margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
 
-        a {
+        a   {
             flex-basis: 0;
             flex: 1 1 0px;
             display: block;
@@ -42,7 +42,6 @@ header {
     transition: all .2s ease;
 
     &:hover {
-        // font-size: 23px;
         transform: scale(1.2);
         color: rgba(71, 108, 0, 0.76);
     }
@@ -50,7 +49,7 @@ header {
 
 //start search form
 
-.search {
+.search  {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -58,7 +57,7 @@ header {
     margin: auto 60px auto 35px;
     justify-content: flex-end;
 
-    &_inpt {
+    &_inpt  {
         display: none;
         border: none;
         outline: none;
@@ -74,7 +73,7 @@ header {
         padding: 2px 10px;
     }   
     
-    &_butt {
+    &_butt  {
         cursor: pointer;
         border: none;
         color: white;
@@ -85,7 +84,7 @@ header {
         }
     }  
     
-    &_inpt:focus, &_butt:focus ~ &_inpt {
+    &_inpt:focus, &_butt:focus ~ &_inpt  {
         display: block;
     }
     
@@ -95,7 +94,7 @@ header {
 }
 
 
-::placeholder {
+::placeholder   {
     color: white;
 }
 

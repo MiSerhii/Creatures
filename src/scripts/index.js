@@ -29,9 +29,8 @@ $(document).ready(function() {
                 $searchInput.removeClass('active');
             }
 
-        //   $searchInput.removeClass('active');
         }
-      });
+    });
 });
 
 
