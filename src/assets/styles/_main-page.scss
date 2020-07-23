@@ -39,14 +39,16 @@
 }
 
 .slider .slick-dots button {
+    padding: 0;
+    margin: 0px 5px;
     font-size: 0;
     width: 50px;
-    height: 2px;
+    height: 5px;
     background-color: white;
-    margin: 0px 5px;
     border-radius: 3px;
     outline: none;
     border: none;
+    
 
     &::before {
         display: none;
@@ -127,3 +129,5 @@
         top: 310px;
     }
 }
+
+// end slide #1
