@@ -58,3 +58,72 @@
 }
 
 // end main-page slider form
+
+// slide #1
+
+.slider_item1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &_majestic {
+        display: flex;
+        align-items: center;
+        padding: 150px 0px 0px 220px;
+        font-family: Montserrat;
+        font-weight: 800;
+        font-size: 72px;
+        letter-spacing: 0.04em;
+        color: #212121;
+    }
+
+    &_weekend {
+        display: flex;
+        align-items: center;
+        padding-left: 220px;
+        font-family: Montserrat;
+        font-weight: 800;
+        font-size: 144px;
+        letter-spacing: 0.04em;
+        color: #212121;
+    }
+
+    &_offer {
+        display: flex;
+        align-items: center;
+        padding-left: 220px;
+        font-family: Alegreya Sans;
+        font-size: 27px;
+        line-height: 39px;
+    }
+
+    &_expl-now {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px 0px 220px;
+        width: 168px;
+        height: 52px;
+        font-family: Alegreya Sans;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 23px;
+        color: white;
+        background-color: rgba(71, 108, 0, 0.76);
+        outline: none;
+        border: none;
+
+        &:hover { 
+            box-shadow: 0 0 2px 2px #212121;
+            font-size: 21px;
+        }
+    }
+
+    &_reptile-pic   {  
+        position: absolute;
+        width: 863px;
+        height: 383px;
+        left: 900px;
+        top: 310px;
+    }
+}
