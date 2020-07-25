@@ -1,10 +1,77 @@
-.main-info {
+.store-info {
     display: flex;
+    flex-direction: column;
     position: relative;
     letter-spacing: 0.05em;
     width: 100%;
     min-height: calc(100vh - 80px);
     left: 0px;
+}
 
-    background: linear-gradient(119.69deg, rgba(204, 204, 204, 0.37) 0%, rgba(102, 102, 102, 0.23) 100%);
+.directory {
+    margin: 40px 0px 0px 60px;
+    font-family: Alegreya Sans;
+}
+
+.category-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Alegreya Sans;
+    margin: 40px 60px 0px 60px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    &_view {
+        display: flex;
+        align-items: center;
+    }
+
+    &_grid-icon1 {
+        color: black;
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+
+    &_grid-icon2 {
+        padding: 0px 20px;
+        
+        &:hover {
+            transform: scale(0.9);
+
+        }
+    }
+
+    &_filter {
+        display: flex;
+        align-items: center;
+    }
+
+    &_sort {
+        display: flex;
+        align-items: center;  
+    }
+}
+
+.action {
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #A7AAAB;
+    padding-right: 15px;
+
+    &_value {
+        font-family: Alegreya Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #212121;
+        padding-right: 10px;
+    }
 }
