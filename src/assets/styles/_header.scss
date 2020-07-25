@@ -15,6 +15,7 @@ header  {
 .header-menu    {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &_key-menu  {
         margin: auto;
@@ -54,7 +55,7 @@ header  {
     align-items: center;
     box-sizing: border-box;
     width: 50%;
-    margin: auto 60px auto 35px;
+    margin: auto 0px auto 35px;
     justify-content: flex-end;
 
     &_inpt  {
@@ -101,5 +102,28 @@ header  {
 :focus::placeholder {
     color: transparent;
 }
-
 //end search form
+
+svg, i {
+    display: block;
+    width: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+
+    &_count {
+        margin: 0px 0px 0px 10px;
+        font-family: "Font Awesome 5 Free";
+        color: white;  
+    }
+}
+
+.account {
+    margin-right: 60px;
+}
+

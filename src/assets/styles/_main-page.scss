@@ -130,4 +130,18 @@
     }
 }
 
+body {
+    &.home-page {
+        .search {
+            margin: auto 60px auto 35px;
+        }
+        header {
+            .cart,
+            .account {
+                display: none;
+            }
+        }
+    }
+}
+
 // end slide #1
